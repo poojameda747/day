@@ -71,5 +71,5 @@
 // 	console.log(data);
 // }
 // fetchUsers();
-console.log(window);
-console.log(document);
+// console.log(window);
+// console.log(document);

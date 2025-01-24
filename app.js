@@ -41,11 +41,11 @@ console.log(a);
 //  let num = 10.345678;
 //  console.log(num , typeof(num));
 
- let bool = true;
- console.log(bool , typeof(bool));
+//  let bool = true;
+//  console.log(bool , typeof(bool));
 
- let a;
- console.log(a , typeof(a));
+//  let a;
+//  console.log(a , typeof(a));
 
- let b = null;
- console.log(b , typeof(b));
+//  let b = null;
+//  console.log(b , typeof(b));
