@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+</head>
+<body>
+
+    <h2>Employee Details</h2>
+
+    <table border="1"  >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>Area</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            <!-- JavaScript will insert rows here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Employee Data as an Array of Objects
+        const employees = [
+    {
+     empId: 101,
+     empName: "Pooja",
+     empCompany: "TCS",
+     empSalary: 50000,
+     empAddress: {
+        empCity: "Hyderabad",
+        empArea: "Banglore"
+     }
+    },
+{
+
+
+    empId: 102,
+    empName: "Jhansi",
+    empCompany: "Adviti",
+    empSalary: 60000,
+    empAddress: {
+       empCity: "Hyderabad",
+             empArea: "Madhapur"
+    }
+},
+
+{
+    empId: 103,
+    empName: "Bhumika",
+    empCompany: "TCS",
+    empSalary: 450000,
+    empAddress: {
+    empCity: "Banglore",
+    empArea: "Whitefeild"
+}
+},
+ {
+
+ 
+    empId: 104,
+    empName: "Uttej",
+    empCompany: "Marketagr",
+    empSalary: 65000,
+    empAddress: {
+       empCity: "Indore",
+             empArea: "Indore"
+    }
+},
+  {
+    empId: 105,
+    empName: "druthi",
+    empCompany: "Infosys",
+    empSalary: 60000,
+    empAddress: {
+        empCity: "Hyderabad",
+        empArea: "Madhapur"
+    }
+}
+   
+];
+
+        // Function to Insert Data into Table
+        function populateTable() {
+            const tableBody = document.getElementById("employeeTableBody");
+
+            employees.forEach(emp => {
+                let row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${emp.empId}</td>
+                    <td>${emp.empName}</td>
+                    <td>${emp.empCompany}</td>
+                    <td>₹${emp.empSalary}</td>
+                    <td>${emp.empAddress.empCity}</td>
+                    <td>${emp.empAddress.empArea}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Call Function on Page Load
+        window.onload = populateTable;
+    </script>
+
+</body>
+</html>

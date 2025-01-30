@@ -1,0 +1,42 @@
+ QN1.take array of object each object contain id 
+or emp id,emp name emp, company,emp salary and emp address,
+where emp address is again and an  object which contains emp city,
+emp area. print in  all those values on the UI the form of table.
+5 users emp data
+
+
+modules are like import/export code to ANOTEHR js files
+1.named
+2.default
+
+1.named: define while importing should use the same name that 
+you are defining exactly you can export as many moduke of code that you want
+
+
+2.default:
+while importing can use any name that you want u can export 
+only one module
+scrpt1.js
+
+
+  export  let name="mru";
+export function greet(){
+    return "Good Morining STudents";
+}
+
+script2.js
+
+import name from"./script1.js";
+import greet from"./script1.js";
+
+console.log(name);
+console.log(greet());
+let message=greet()
+
+qn.1 create a signup form that contains username(empty),
+email(@,!empty)
+password(should be 6) and confirm password(same, !empty),
+ once you click on 
+submit button a alert should
+be popped up one you screen "form is submitted successfully"
+if and only if all details are correct. 
